@@ -7,6 +7,7 @@ Misc.add_libdir if __FILE__ == $0
 
 Workflow.require_workflow "Sequence"
 Workflow.require_workflow "DbNSFP"
+Workflow.require_workflow "AlphaMissense"
 
 module PMut
   extend Workflow
@@ -28,6 +29,7 @@ module PMut
       begin
         tsv = TSV.open(url, :sep => ',', :header_hash => '', :type => :list)
       rescue
+        Log.exception $!
         next
       end
       tsv.add_field "Mutation" do 
@@ -47,6 +49,10 @@ end
 
 module AMetaPred
   extend Workflow
+
+  def self.organism
+    "Hsa/feb2014"
+  end
 
   task :parse_mutations => :tsv do
     input = Rbbt.data["DDD_input.csv"].tsv :type => :list, :header_hash => '', :sep => ','
@@ -72,7 +78,7 @@ module AMetaPred
   end
 
   dep :genomic_mutations
-  dep_task :mutated_isoforms, Sequence, :mutated_isoforms_fast, :mutations => :genomic_mutations, :organism => "Hsa/feb2014", :principal => false
+  dep_task :mutated_isoforms, Sequence, :mutated_isoforms_fast, :mutations => :genomic_mutations, :organism => AMetaPred.organism, :principal => false
 
   dep :mutated_isoforms
   task :mis => :array do 
@@ -96,15 +102,6 @@ module AMetaPred
     pmut = pmut.slice(["PMut"])
     pmut.key_field = tsv.key_field
     tsv.attach pmut
-  end
-
-
-  dep :mi_predictions
-  task :values => :tsv do
-    tsv = step(:mi_predictions).load
-    tsv.fields.each do |f|
-      iii [f, Misc.counts(tsv.column(f).values.flatten)]
-    end
   end
 
   dep :add_pmut
@@ -150,10 +147,27 @@ module AMetaPred
     end
   end
 
+  dep :genomic_mutations
+  dep_task :alpha_missense, AlphaMissense, :score, :mutations => :genomic_mutations, :build => 'hg19'
+
   dep :add_fujitsu
+  dep :alpha_missense
+  task :add_alpha_missense => :tsv do 
+    tsv = step(:add_fujitsu).load
+    alpha_missense = step(:alpha_missense).load
+    tsv.add_field "AlphaMissense" do |k,values|
+      mutation = values["Genomic Mutation"]
+      next if alpha_missense[mutation].nil?
+      alpha_missense[mutation] > 0.5
+    end
+  end
+
+
+
+  dep :add_alpha_missense
   task :evaluate => :tsv do
-    result = step(:add_fujitsu).load
-    predictors = result.fields[7..-1]
+    result = dependencies.last.load
+    predictors = result.fields[8..-1]
     tsv = TSV.setup({}, "Predictor~TP,TN,FP,FN,Precision,Recall,F-score,MCC#:type=:list#:cast=:to_f")
 
     predictors.each do |predictor|
@@ -247,8 +261,8 @@ module AMetaPred
     y_field = "Recall"
     aggregation_data = tsv.keys.collect do |participant_id|
       {
-        "metric_x" => 218462,
-        "metric_y" => 191952,
+        "metric_x" => tsv[participant_id][x_field],
+        "metric_y" => tsv[participant_id][y_field],
         "participant_id" => participant_id
       }
     end
@@ -295,14 +309,31 @@ module AMetaPred
     json_dir = file('jsons')
     tsv.keys.each do |participant_id|
       tool_access_type = 'command-line'
-      link = "https://sites.google.com/site/jpopgen/dbNSFP"
-      contact = "Miguel.Vazquez.Garcia"
+
+      case participant_id
+      when /Fujitsu/
+        link = "https://www.fujitsu.com/global/about/research/"
+        contact = "Raul.Valin"
+        description = "Explainable AI predictor of pathogenicity developed by Fujitsu"
+      when /PMut/
+        link = "https://mmb.irbbarcelona.org/PMut/"
+        contact = "Josep.Lluis.Gelpi"
+        description = "PMut: a web-based tool for the annotation of pathological variants on proteins"
+      when /AlphaMis/
+        link = "https://www.science.org/doi/10.1126/science.adg7492"
+        contact = "Jun.Cheng"
+        description = "Accurate proteome-wide missense variant effect prediction with AlphaMissense"
+      else
+        link = "https://sites.google.com/site/jpopgen/dbNSFP"
+        contact = "Miguel.Vazquez.Garcia"
+        description = "Tool #{participant_id} from DbNSFP"
+      end
       info = {
         "_id" => participant_id,
         "_schema" => "https://www.elixir-europe.org/excelerate/WP2/json-schemas/1.0/Tool",
         "community_ids" => [community_id],
         "name" => participant_id,
-        "description" => "Tool #{participant_id} from DbNSFP",
+        "description" => description,
         "is_automated" => false,
         "tool_contact_ids" => [
           contact

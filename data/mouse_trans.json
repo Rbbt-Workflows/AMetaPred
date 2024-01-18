@@ -1,0 +1,752 @@
+[
+{
+    "_id": "LRGASP:rnaSPAdes_P",
+    "challenge_id": [
+        "mouse_trans_cDNA-Illumina-SO",
+        "mouse_trans_dRNA-ONT-LS",
+        "mouse_trans_cDNA-ONT-LS",
+        "mouse_trans_cDNA-PacBio-LS"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "attrs": [
+            "archive"
+        ],
+        "status": "ok",
+        "validation_date": "2023-07-06T08:40:07.590000+02:00"
+    },
+    "participant_id": "rnaSPAdes",
+    "type": "participant"
+},
+{
+    "_id": "LRGASP:Bambu_P",
+    "challenge_id": [
+        "mouse_trans_CapTrap-ONT-LO",
+        "mouse_trans_cDNA-ONT-LO",
+        "mouse_trans_dRNA-ONT-LO",
+        "mouse_trans_R2C2-ONT-LO",
+        "mouse_trans_CapTrap-PacBio-LO",
+        "mouse_trans_cDNA-PacBio-LO"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "attrs": [
+            "archive"
+        ],
+        "status": "ok",
+        "validation_date": "2023-07-06T08:40:07.590000+02:00"
+    },
+    "participant_id": "Bambu",
+    "type": "participant"
+},
+{
+    "_id": "LRGASP:StringTie2--IsoQuant_P",
+    "challenge_id": [
+        "mouse_trans_R2C2-ONT-LO",
+        "mouse_trans_cDNA-ONT-LO",
+        "mouse_trans_dRNA-ONT-LO",
+        "mouse_trans_CapTrap-PacBio-LO",
+        "mouse_trans_cDNA-PacBio-LO"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "attrs": [
+            "archive"
+        ],
+        "status": "ok",
+        "validation_date": "2023-07-06T08:40:07.590000+02:00"
+    },
+    "participant_id": "StringTie2--IsoQuant",
+    "type": "participant"
+},
+{
+    "_id": "LRGASP:RNA-Bloom_P",
+    "challenge_id": [
+        "mouse_trans_cDNA-ONT-LO",
+        "mouse_trans_cDNA-ONT-LS"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "attrs": [
+            "archive"
+        ],
+        "status": "ok",
+        "validation_date": "2023-07-06T08:40:07.590000+02:00"
+    },
+    "participant_id": "RNA-Bloom",
+    "type": "participant"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-Illumina-SO_rnaSPAdes_Number of transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-Illumina-SO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 218462
+    },
+    "participant_id": "rnaSPAdes",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-Illumina-SO_rnaSPAdes_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-Illumina-SO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 191952
+    },
+    "participant_id": "rnaSPAdes",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_CapTrap-ONT-LO_Bambu_Number of transcripts_A",
+    "challenge_id": "mouse_trans_CapTrap-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 23487
+    },
+    "participant_id": "Bambu",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_CapTrap-ONT-LO_Bambu_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_CapTrap-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 23486
+    },
+    "participant_id": "Bambu",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_dRNA-ONT-LS_rnaSPAdes_Number of transcripts_A",
+    "challenge_id": "mouse_trans_dRNA-ONT-LS",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 92772
+    },
+    "participant_id": "rnaSPAdes",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_dRNA-ONT-LS_rnaSPAdes_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_dRNA-ONT-LS",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 91543
+    },
+    "participant_id": "rnaSPAdes",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_R2C2-ONT-LO_StringTie2--IsoQuant_Number of transcripts_A",
+    "challenge_id": "mouse_trans_R2C2-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 44031
+    },
+    "participant_id": "StringTie2--IsoQuant",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_R2C2-ONT-LO_StringTie2--IsoQuant_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_R2C2-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 44022
+    },
+    "participant_id": "StringTie2--IsoQuant",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-ONT-LO_Bambu_Number of transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 21318
+    },
+    "participant_id": "Bambu",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-ONT-LO_Bambu_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 21288
+    },
+    "participant_id": "Bambu",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_dRNA-ONT-LO_Bambu_Number of transcripts_A",
+    "challenge_id": "mouse_trans_dRNA-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 21900
+    },
+    "participant_id": "Bambu",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_dRNA-ONT-LO_Bambu_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_dRNA-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 21899
+    },
+    "participant_id": "Bambu",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_R2C2-ONT-LO_Bambu_Number of transcripts_A",
+    "challenge_id": "mouse_trans_R2C2-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 27031
+    },
+    "participant_id": "Bambu",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_R2C2-ONT-LO_Bambu_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_R2C2-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 27028
+    },
+    "participant_id": "Bambu",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-ONT-LO_RNA-Bloom_Number of transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 85424
+    },
+    "participant_id": "RNA-Bloom",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-ONT-LO_RNA-Bloom_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 85319
+    },
+    "participant_id": "RNA-Bloom",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-ONT-LS_RNA-Bloom_Number of transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-ONT-LS",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 107530
+    },
+    "participant_id": "RNA-Bloom",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-ONT-LS_RNA-Bloom_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-ONT-LS",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 107348
+    },
+    "participant_id": "RNA-Bloom",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-ONT-LO_StringTie2--IsoQuant_Number of transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 75779
+    },
+    "participant_id": "StringTie2--IsoQuant",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-ONT-LO_StringTie2--IsoQuant_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 75034
+    },
+    "participant_id": "StringTie2--IsoQuant",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-ONT-LS_rnaSPAdes_Number of transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-ONT-LS",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 151439
+    },
+    "participant_id": "rnaSPAdes",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-ONT-LS_rnaSPAdes_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-ONT-LS",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 144419
+    },
+    "participant_id": "rnaSPAdes",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_dRNA-ONT-LO_StringTie2--IsoQuant_Number of transcripts_A",
+    "challenge_id": "mouse_trans_dRNA-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 29400
+    },
+    "participant_id": "StringTie2--IsoQuant",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_dRNA-ONT-LO_StringTie2--IsoQuant_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_dRNA-ONT-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 29396
+    },
+    "participant_id": "StringTie2--IsoQuant",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_CapTrap-PacBio-LO_Bambu_Number of transcripts_A",
+    "challenge_id": "mouse_trans_CapTrap-PacBio-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 15038
+    },
+    "participant_id": "Bambu",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_CapTrap-PacBio-LO_Bambu_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_CapTrap-PacBio-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 0
+    },
+    "participant_id": "Bambu",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-PacBio-LO_Bambu_Number of transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-PacBio-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 27208
+    },
+    "participant_id": "Bambu",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-PacBio-LO_Bambu_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-PacBio-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 27202
+    },
+    "participant_id": "Bambu",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_CapTrap-PacBio-LO_StringTie2--IsoQuant_Number of transcripts_A",
+    "challenge_id": "mouse_trans_CapTrap-PacBio-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 28246
+    },
+    "participant_id": "StringTie2--IsoQuant",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_CapTrap-PacBio-LO_StringTie2--IsoQuant_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_CapTrap-PacBio-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 28243
+    },
+    "participant_id": "StringTie2--IsoQuant",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-PacBio-LO_StringTie2--IsoQuant_Number of transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-PacBio-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 52902
+    },
+    "participant_id": "StringTie2--IsoQuant",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-PacBio-LO_StringTie2--IsoQuant_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-PacBio-LO",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 52897
+    },
+    "participant_id": "StringTie2--IsoQuant",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-PacBio-LS_rnaSPAdes_Number of transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-PacBio-LS",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of transcripts",
+        "value": 171115
+    },
+    "participant_id": "rnaSPAdes",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-PacBio-LS_rnaSPAdes_Number of mapping transcripts_A",
+    "challenge_id": "mouse_trans_cDNA-PacBio-LS",
+    "community_id": "LRGASP",
+    "metrics": {
+        "metric_id": "Number of mapping transcripts",
+        "value": 163852
+    },
+    "participant_id": "rnaSPAdes",
+    "type": "assessment"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-Illumina-SO_agg_Number of transcripts+Number of mapping transcripts",
+    "challenge_ids": [
+        "mouse_trans_cDNA-Illumina-SO"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "inline_data": {
+            "challenge_participants": [
+                {
+                    "metric_x": 218462,
+                    "metric_y": 191952,
+                    "participant_id": "rnaSPAdes"
+                }
+            ],
+            "visualization": {
+                "type": "2D-plot",
+                "x_axis": "Number of transcripts",
+                "y_axis": "Number of mapping transcripts"
+            }
+        }
+    },
+    "type": "aggregation"
+},
+{
+    "_id": "LRGASP:mouse_trans_CapTrap-ONT-LO_agg_Number of transcripts+Number of mapping transcripts",
+    "challenge_ids": [
+        "mouse_trans_CapTrap-ONT-LO"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "inline_data": {
+            "challenge_participants": [
+                {
+                    "metric_x": 23487,
+                    "metric_y": 23486,
+                    "participant_id": "Bambu"
+                }
+            ],
+            "visualization": {
+                "type": "2D-plot",
+                "x_axis": "Number of transcripts",
+                "y_axis": "Number of mapping transcripts"
+            }
+        }
+    },
+    "type": "aggregation"
+},
+{
+    "_id": "LRGASP:mouse_trans_dRNA-ONT-LS_agg_Number of transcripts+Number of mapping transcripts",
+    "challenge_ids": [
+        "mouse_trans_dRNA-ONT-LS"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "inline_data": {
+            "challenge_participants": [
+                {
+                    "metric_x": 92772,
+                    "metric_y": 91543,
+                    "participant_id": "rnaSPAdes"
+                }
+            ],
+            "visualization": {
+                "type": "2D-plot",
+                "x_axis": "Number of transcripts",
+                "y_axis": "Number of mapping transcripts"
+            }
+        }
+    },
+    "type": "aggregation"
+},
+{
+    "_id": "LRGASP:mouse_trans_R2C2-ONT-LO_agg_Number of transcripts+Number of mapping transcripts",
+    "challenge_ids": [
+        "mouse_trans_R2C2-ONT-LO"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "inline_data": {
+            "challenge_participants": [
+                {
+                    "metric_x": 44031,
+                    "metric_y": 44022,
+                    "participant_id": "StringTie2--IsoQuant"
+                },
+                {
+                    "metric_x": 27031,
+                    "metric_y": 27028,
+                    "participant_id": "Bambu"
+                }
+            ],
+            "visualization": {
+                "type": "2D-plot",
+                "x_axis": "Number of transcripts",
+                "y_axis": "Number of mapping transcripts"
+            }
+        }
+    },
+    "type": "aggregation"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-ONT-LO_agg_Number of transcripts+Number of mapping transcripts",
+    "challenge_ids": [
+        "mouse_trans_cDNA-ONT-LO"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "inline_data": {
+            "challenge_participants": [
+                {
+                    "metric_x": 21318,
+                    "metric_y": 21288,
+                    "participant_id": "Bambu"
+                },
+                {
+                    "metric_x": 85424,
+                    "metric_y": 85319,
+                    "participant_id": "RNA-Bloom"
+                },
+                {
+                    "metric_x": 75779,
+                    "metric_y": 75034,
+                    "participant_id": "StringTie2--IsoQuant"
+                }
+            ],
+            "visualization": {
+                "type": "2D-plot",
+                "x_axis": "Number of transcripts",
+                "y_axis": "Number of mapping transcripts"
+            }
+        }
+    },
+    "type": "aggregation"
+},
+{
+    "_id": "LRGASP:mouse_trans_dRNA-ONT-LO_agg_Number of transcripts+Number of mapping transcripts",
+    "challenge_ids": [
+        "mouse_trans_dRNA-ONT-LO"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "inline_data": {
+            "challenge_participants": [
+                {
+                    "metric_x": 21900,
+                    "metric_y": 21899,
+                    "participant_id": "Bambu"
+                },
+                {
+                    "metric_x": 29400,
+                    "metric_y": 29396,
+                    "participant_id": "StringTie2--IsoQuant"
+                }
+            ],
+            "visualization": {
+                "type": "2D-plot",
+                "x_axis": "Number of transcripts",
+                "y_axis": "Number of mapping transcripts"
+            }
+        }
+    },
+    "type": "aggregation"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-ONT-LS_agg_Number of transcripts+Number of mapping transcripts",
+    "challenge_ids": [
+        "mouse_trans_cDNA-ONT-LS"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "inline_data": {
+            "challenge_participants": [
+                {
+                    "metric_x": 107530,
+                    "metric_y": 107348,
+                    "participant_id": "RNA-Bloom"
+                },
+                {
+                    "metric_x": 151439,
+                    "metric_y": 144419,
+                    "participant_id": "rnaSPAdes"
+                }
+            ],
+            "visualization": {
+                "type": "2D-plot",
+                "x_axis": "Number of transcripts",
+                "y_axis": "Number of mapping transcripts"
+            }
+        }
+    },
+    "type": "aggregation"
+},
+{
+    "_id": "LRGASP:mouse_trans_CapTrap-PacBio-LO_agg_Number of transcripts+Number of mapping transcripts",
+    "challenge_ids": [
+        "mouse_trans_CapTrap-PacBio-LO"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "inline_data": {
+            "challenge_participants": [
+                {
+                    "metric_x": 15038,
+                    "metric_y": 0,
+                    "participant_id": "Bambu"
+                },
+                {
+                    "metric_x": 28246,
+                    "metric_y": 28243,
+                    "participant_id": "StringTie2--IsoQuant"
+                }
+            ],
+            "visualization": {
+                "type": "2D-plot",
+                "x_axis": "Number of transcripts",
+                "y_axis": "Number of mapping transcripts"
+            }
+        }
+    },
+    "type": "aggregation"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-PacBio-LO_agg_Number of transcripts+Number of mapping transcripts",
+    "challenge_ids": [
+        "mouse_trans_cDNA-PacBio-LO"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "inline_data": {
+            "challenge_participants": [
+                {
+                    "metric_x": 27208,
+                    "metric_y": 27202,
+                    "participant_id": "Bambu"
+                },
+                {
+                    "metric_x": 52902,
+                    "metric_y": 52897,
+                    "participant_id": "StringTie2--IsoQuant"
+                }
+            ],
+            "visualization": {
+                "type": "2D-plot",
+                "x_axis": "Number of transcripts",
+                "y_axis": "Number of mapping transcripts"
+            }
+        }
+    },
+    "type": "aggregation"
+},
+{
+    "_id": "LRGASP:mouse_trans_cDNA-PacBio-LS_agg_Number of transcripts+Number of mapping transcripts",
+    "challenge_ids": [
+        "mouse_trans_cDNA-PacBio-LS"
+    ],
+    "community_id": "LRGASP",
+    "datalink": {
+        "inline_data": {
+            "challenge_participants": [
+                {
+                    "metric_x": 171115,
+                    "metric_y": 163852,
+                    "participant_id": "rnaSPAdes"
+                }
+            ],
+            "visualization": {
+                "type": "2D-plot",
+                "x_axis": "Number of transcripts",
+                "y_axis": "Number of mapping transcripts"
+            }
+        }
+    },
+    "type": "aggregation"
+},
+{
+    "id": "mouse_trans_cDNA-Illumina-SO",
+    "participants": [
+        "rnaSPAdes"
+    ]
+},
+{
+    "id": "mouse_trans_CapTrap-ONT-LO",
+    "participants": [
+        "Bambu"
+    ]
+},
+{
+    "id": "mouse_trans_R2C2-ONT-LO",
+    "participants": [
+        "StringTie2--IsoQuant"
+    ]
+},
+{
+    "id": "mouse_trans_cDNA-ONT-LO",
+    "participants": [
+        "RNA-Bloom"
+    ]
+}
+]
